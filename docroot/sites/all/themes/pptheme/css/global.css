@@ -1,0 +1,317 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* imports */
+@import url("global-fonts.css");
+@import url("global-menu.css");
+@import url("global-text.css");
+
+/* general hacks */
+ul, li {
+	list-style: none outside none;
+}
+
+body {
+	font-family: AllerRegular, Geneva, "Helvetica Nueue", Helvetica, Verdana, Arial, sans-serif !important;
+	background-color: black;
+	background-image: url("../images/bg-tags_gray.jpg");
+	background-position: -20% 0 top;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+div.content {
+	overflow: hidden;
+}
+
+
+div.region-content-inner {
+	margin: 5px 10px 5px 5px;
+}
+
+#region-sidebar-first .content {
+	margin-bottom: 20px;
+}
+
+/* cookie controll button hack */
+#ccc-go {
+	color: black;
+}
+
+/* topmenu, social media buttons, textlinks and search */
+div.topmenu {
+	float: right;
+}
+
+div.topmenu ul {
+	float: right;
+}
+
+ul.topmenu-search li {
+	display: block;
+	height: 30px;
+	padding: 0 10px;
+	vertical-align: middle;
+	background-color: #f7f7f7;
+	color: black;
+	line-height: 30px;
+}
+
+ul.topmenu-textlinks a {
+	display: block;
+	height: 30px;
+	padding: 0 10px;
+	background-color: #f7f7f7;
+	color: black;
+	line-height: 30px;
+}
+
+ul.topmenu-socialmedia {
+    overflow: hidden;
+}
+ul.topmenu-socialmedia li {
+    float: left;
+}
+ul.topmenu-textlinks li {
+	float: left;
+}
+ul.topmenu-socialmedia li a {
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 30px;
+}
+ul.topmenu-socialmedia li.twitter a {
+    background: url("../images/sm-icons.png") no-repeat scroll 0 0 transparent;
+}
+ul.topmenu-socialmedia li.twitter a:hover {
+    background: url("../images/sm-icons.png") no-repeat scroll 0 -30px transparent;
+}
+ul.topmenu-socialmedia li.facebook a {
+    background: url("../images/sm-icons.png") no-repeat scroll -30px 0 transparent;
+}
+ul.topmenu-socialmedia li.facebook a:hover {
+    background: url("../images/sm-icons.png") no-repeat scroll -30px -30px transparent;
+}
+ul.topmenu-socialmedia li.youtube a {
+    background: url("../images/sm-icons.png") no-repeat scroll -60px 0 transparent;
+}
+ul.topmenu-socialmedia li.youtube a:hover {
+    background: url("../images/sm-icons.png") no-repeat scroll -60px -30px transparent;
+}
+
+/* zone's, sections and regions */
+#section-header {
+	margin-top: 18px;
+    position: relative;
+	height: 225px;
+	
+    background-color: #EEEEEE;
+    background-image: url("../images/darkwave.png"), url("../images/boat.png");
+    background-position: -20% bottom, 56% bottom;
+    background-repeat: repeat-x, no-repeat;
+}
+
+#pptheme-logo {
+	display: block;
+	width: 593px;
+	height: 73px;
+    text-indent: -999em;
+	background-image: url("../images/pplogo.png");
+	background-position: 0 top;
+	background-repeat: no-repeat;
+}
+
+/* Very Dirty Fix for zone-menu to get it moved down.. */
+#zone-menu-wrapper {
+	height: 0px;
+}
+#zone-menu {
+	top: -26px;
+	position: relative;
+}
+
+#region-menu {
+	padding-top: 84px;
+	height: 1px;
+}
+
+#section-content {	
+	background-color: black;
+	background-image: url("../images/bg-tags.png");
+	background-position: -20% 0 top;
+	background-repeat: repeat;
+	background-attachment:fixed;
+}
+
+#zone-content a {
+	color: #522E91;
+	position: relative;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+#zone-content a:hover {
+	color: #FF8800;
+}
+
+#region-content .content h2.node-title {
+	margin-bottom: 0px;
+}
+
+#region-content .content footer.submitted  {
+	margin-bottom: 15px;
+}
+
+#zone-breadcrumb-wrapper {
+	background-color: black;
+	min-height: 8px;
+}
+
+#breadcrumb {
+	background-color: black;
+	height: 20px;
+	color: silver;
+	padding: 5px 20px 5px 15px;
+}
+
+#breadcrumb ul.breadcrumb  a {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+	border-radius: 5px 5px 5px 5px;
+	color: white;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+#breadcrumb ul.breadcrumb .active {
+	color: #C0C0C0;
+	background: none;
+	border-radius: 0;
+}
+
+#region-content {
+	background-color: white;
+	margin-right: 0;
+}
+
+#region-content .region-inner {
+	padding-left: 1em;
+}
+
+#region-sidebar-first {
+	background: none repeat scroll 0 0 rgba(33, 11, 86, 0.2) !important;
+	margin-left: 0;
+}
+
+#region-sidebar-first .block-title {
+	color: white;
+	padding-left: 15px;
+	letter-spacing: 1.4px;
+}
+
+#region-sidebar-first .region-inner {
+	padding: 20px;
+}
+
+#region-sidebar-first .block .content {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.35);
+	padding: 5px;
+}
+
+#region-sidebar-first .content a {
+    background: none repeat scroll 0 0 #522E91;
+    border-radius: 2px 2px 2px 2px;
+    color: white;
+    display: inline-block;
+    padding: 0 5px;
+}
+#region-sidebar-first .content a:hover {
+	background-color: #FF8800;
+}
+
+/* sidebar layouts */
+	/* twitter layout */
+	#twitter-db-list {
+		color: black;
+	}
+
+	#twitter-db-list li {
+		padding-top: 25px;
+		padding-left: 5px;
+		background-image: url("../images/jolly.png");
+		background-repeat: no-repeat;
+	}
+
+	#twitter-db-list li.first {
+		padding-top: 0px;
+		background-image: none;
+	}
+
+	/* agregator layout */
+	.block-aggregator .content .item-list li {
+		margin-left: 5px;
+	}
+
+	/* user menu layout */
+	.block-system-user-menu .content li {
+		list-style: none outside none !important;
+	}
+
+#section-footer {
+	overflow: hidden;
+}
+
+#region-footer-first-left {
+	margin-right: 0;
+}
+#region-footer-first-right {
+	margin-left: 0;
+}
+
+#region-footer-first-left div.region-inner {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	color: #EEEEEE;
+	padding: 20px;
+}
+
+.other-pirate-parties-title, .ppnl-info-title {
+	letter-spacing: 1px;
+	font-size: 20px;
+	line-height: 25px;
+	font-family: "BebasNeueRegular",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.other-pirate-parties-links li, .ppnl-info-links  li {
+	float: left;
+}
+
+.other-pirate-parties-links a, .ppnl-info-links a {
+	text-decoration: none;
+	vertical-align: baseline;
+	position: relative;
+	background: none repeat scroll 0 0 black;
+	color: #2D7DC5;
+	display: block;
+	margin: 0 2px 2px 0;
+	padding: 0 5px;
+}
+#section-footer a:hover {
+    -moz-transition: all 0.2s ease-in-out 0s;
+    background: none repeat scroll 0 0 #2D7DC5;
+    color: white;
+}
+
+#region-footer-first-right div.region-inner {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	color: #EEEEEE;
+	padding: 20px;
+}
+
+#region-footer-second div.region-inner {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+	color: #EEEEEE;
+	padding: 20px;
+}

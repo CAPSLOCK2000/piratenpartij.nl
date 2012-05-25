@@ -1,0 +1,151 @@
+/* Custom CSS3 Menu */
+
+.navigation {
+    bottom: 0;
+    position: relative;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;  
+}
+/* new layout rules (checked) */
+/* all these rules seem to work fine... just one thing;; the submenu's should be hidden on mobile.. so the css that shows em should be moved to pptheme-alpha-default.css .. TODO */
+.navigation ul {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.navigation li {
+	list-style: none outside none !important;
+}
+
+.navigation a {
+	text-decoration: none !important;
+}
+
+.navigation>ul.menu {
+    border-radius: 3px 3px 0 0;
+    float: left;
+}
+
+.navigation>ul.menu>li {
+	float: left;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.navigation ul.menu li>a {
+    display: block;
+}
+
+.navigation>ul.menu {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+}
+
+.navigation>ul.menu li a {
+    border-bottom: 0 none;
+    border-radius: 3px 3px 0 0;
+    color: black;
+    /*font-family: AllerRegular, Geneva, "Helvetica Nueue", Helvetica, Verdana, Arial, sans-serif;*/
+	font-family: "BebasNeueRegular", Helvetica, Arial, sans-serif;
+    font-size: 21.6px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 12px 10px 10px;
+	line-height: 18px;
+}
+
+
+.navigation>ul.menu li a:hover {
+    color: #FF8800; /*#2D7DC5;*/
+}
+
+.navigation>ul.menu>li.first a {
+    background: url("../images/home.gif") no-repeat scroll center 10px transparent !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-indent: -999em;
+}
+.navigation>ul.menu>li.first a:hover {
+    background: url("../images/home.gif") no-repeat scroll center 10px white !important;
+}
+.navigation>ul.menu>li.first a.active {
+    background: url("../images/home.gif") no-repeat scroll center -107px #111111 !important;
+}
+.navigation>ul.menu>li.first a.active:hover {
+    background: url("../images/home.gif") no-repeat scroll center 10px #111111 !important;
+}
+
+.navigation>ul.menu>li.expanded:hover {
+    background: none repeat scroll 0 0 white;
+}
+
+.navigation>ul.menu>li.expanded>ul.menu {
+    position: absolute;
+    top: -999em;
+    z-index: 999;
+}
+.navigation>ul.menu>li.expanded:hover>ul.menu {
+    background: none repeat scroll 0 0 white;
+    border-radius: 0 3px 3px 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 5px 0;
+    top: 40px;
+    width: 200px;
+}
+.navigation>ul.menu>li.expanded:hover>ul.menu>li>a.active {
+    background: none repeat scroll 0 0 white;
+    color: black;
+}
+
+.navigation>ul.menu>li.expanded:hover>ul.menu>hr {
+    margin: 0 !important;
+}
+.navigation>ul.menu>li.expanded:hover>ul.menu>li {
+    float: none;
+    position: relative;
+}
+.navigation>ul.menu>li.expanded:hover>ul.menu>li>a {
+    border-radius: 0 0 0 0;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    letter-spacing: 0;
+    padding: 2px 18px;
+}
+.navigation>ul.menu>li.expanded:hover>ul.menu>li>a:hover {
+    background: none repeat scroll 0 0 white /*#FF8800; /*#2D7DC5;*/
+    color: #FF8800; /*white;*/
+}
+
+.navigation ul.menu li>a.active {
+    background: none repeat scroll 0 0 black;
+    color: white;
+}
+.navigation ul.menu li:hover>a.active {
+    background: none repeat scroll 0 0 white;
+    color: black;
+}
+
+/* self made .. */
+
+.navigation>ul.menu>li>a {
+	text-transform: uppercase;
+}
+
+/* old stuff */
+
+/*
+
+.navigation ul.menu>a:hover {
+    background: none repeat scroll 0 0 white;
+}
+
+.navigation>ul.menu>li.expanded>ul.menu>li {
+	list-style: none outside none !important;
+}
+*/

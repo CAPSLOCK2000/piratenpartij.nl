@@ -1,0 +1,34 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+
+
+/* deze misschien verplaatsen naar default-normal.css ? aangezien ie ook pas vanaf normal zichtbaar is */
+.action-button-word-piraat a {
+	float: left;
+	display: block;
+	height: 77px;
+	width: 129px;
+    	text-indent: -999em;
+	background-image: url("../images/pirat-icons.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.action-button-word-piraat a:hover {
+	background-position: 0px -77px;
+}
+
+.action-button-donatie a {
+	float: left;
+	display: block;
+	height: 77px;
+	width: 129px;
+    text-indent: -999em;
+	background-image: url("../images/pirat-icons.png");
+	background-repeat: no-repeat;
+	background-position: -129px 0px;
+}
+
+.action-button-donatie a:hover {
+	background-position: -129px -77px;
+}
